@@ -176,7 +176,7 @@
         <!--Navigation Controller-->
         <scene sceneID="26U-VO-iPF">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kGi-h7-DyD" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="PitchPerfectNC" automaticallyAdjustsScrollViewInsets="NO" id="kGi-h7-DyD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HFc-95-u8D">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
