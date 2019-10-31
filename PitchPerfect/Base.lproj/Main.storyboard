@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kGi-h7-DyD">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,11 +13,11 @@
             <objects>
                 <viewController id="kth-mG-iH1" customClass="RecordSoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3oF-A0-iwD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLp-3e-hOi">
-                                <rect key="frame" x="129.5" y="345" width="155" height="155"/>
+                                <rect key="frame" x="129.5" y="257" width="155" height="155"/>
                                 <state key="normal" image="RecordButton">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -25,13 +26,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ejp-5R-cSX">
-                                <rect key="frame" x="154" y="508" width="106.5" height="21"/>
+                                <rect key="frame" x="154" y="420" width="106.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3x-Ae-R8m">
-                                <rect key="frame" x="175" y="574" width="64" height="64"/>
+                                <rect key="frame" x="175" y="486" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="RFt-CX-RXG"/>
                                     <constraint firstAttribute="width" constant="64" id="SDe-E2-vPL"/>
@@ -42,7 +43,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="L3x-Ae-R8m" firstAttribute="centerX" secondItem="Ejp-5R-cSX" secondAttribute="centerX" id="ATk-Ih-DVT"/>
                             <constraint firstItem="L3x-Ae-R8m" firstAttribute="top" secondItem="Ejp-5R-cSX" secondAttribute="bottom" constant="45" id="WUo-LH-FaY"/>
@@ -58,7 +59,7 @@
                         <outlet property="recordButton" destination="mLp-3e-hOi" id="vsZ-TY-Ss6"/>
                         <outlet property="recordLebel" destination="Ejp-5R-cSX" id="dxZ-8I-hme"/>
                         <outlet property="stopRecordingButton" destination="L3x-Ae-R8m" id="Rhf-vO-UE8"/>
-                        <segue destination="LaX-HU-HTe" kind="show" identifier="stopRecording" id="wGC-J3-NO7"/>
+                        <segue destination="LaX-HU-HTe" kind="show" identifier="stopRecording" id="m4b-Lb-fuZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mCA-QZ-S6n" sceneMemberID="firstResponder"/>
@@ -70,11 +71,11 @@
             <objects>
                 <viewController id="LaX-HU-HTe" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kxv-pb-I9r">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="A3v-NT-3tB">
-                                <rect key="frame" x="16" y="88" width="382" height="674"/>
+                                <rect key="frame" x="16" y="0.0" width="382" height="674"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Lkx-gi-SHH">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="224.5"/>
@@ -136,7 +137,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2b-2P-hld" userLabel="Stop Button">
-                                <rect key="frame" x="175" y="770" width="64" height="64"/>
+                                <rect key="frame" x="175" y="682" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="7OP-BR-w5j"/>
                                     <constraint firstAttribute="height" constant="64" id="fhc-bD-YQc"/>
@@ -147,7 +148,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hm6-WI-EFy" firstAttribute="trailing" secondItem="A3v-NT-3tB" secondAttribute="trailing" constant="16" id="E2b-Gj-UuZ"/>
                             <constraint firstItem="hm6-WI-EFy" firstAttribute="bottom" secondItem="A3v-NT-3tB" secondAttribute="bottom" constant="100" id="Yj5-M1-0T4"/>
@@ -176,9 +177,10 @@
         <!--Navigation Controller-->
         <scene sceneID="26U-VO-iPF">
             <objects>
-                <navigationController storyboardIdentifier="PitchPerfectNC" automaticallyAdjustsScrollViewInsets="NO" id="kGi-h7-DyD" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="PitchPerfectNC" automaticallyAdjustsScrollViewInsets="NO" interfaceStyle="dark" id="kGi-h7-DyD" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HFc-95-u8D">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="HFc-95-u8D">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

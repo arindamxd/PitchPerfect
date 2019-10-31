@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainstoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         // PitchPerfectNC is the identifier of Navigation controller in Main storyboard
         let vc: UINavigationController = mainstoryboard.instantiateViewController(withIdentifier: "PitchPerfectNC") as! UINavigationController
-        vc.isNavigationBarHidden = true
+        vc.isNavigationBarHidden = false
         window.rootViewController = vc
         return true
     }
